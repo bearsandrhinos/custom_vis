@@ -10,9 +10,9 @@ const default_options = {
     label: "Background Image URL",
     display: "select",
     values: [
-      {"Football": "https://upload.wikimedia.org/wikipedia/commons/d/db/493px-Soccer_field_-_empty.png"}
+      {"Football": "https://i.ebayimg.com/images/i/221428428152-0-1/s-l1000.jpg"}
     ],
-    default: "https://upload.wikimedia.org/wikipedia/commons/d/db/493px-Soccer_field_-_empty.png",
+    default: "https://i.ebayimg.com/images/i/221428428152-0-1/s-l1000.jpg",
   },
   defaultIconURL: {
     section: "Image",
