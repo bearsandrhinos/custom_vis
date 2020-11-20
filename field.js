@@ -10,9 +10,9 @@ const default_options = {
     label: "Background Image URL",
     display: "select",
     values: [
-      {"Football": "https://i.ebayimg.com/images/i/221428428152-0-1/s-l1000.jpg"}
+      {"Football": "https://media.istockphoto.com/vectors/illustration-of-a-soccer-field-football-field-or-soccer-field-vector-id915087622?k=6&m=915087622&s=612x612&w=0&h=VdDyomokyLEC2YTEVbgtb5GmOKzt1wQPUvqex1lE3Ys="}
     ],
-    default: "https://i.ebayimg.com/images/i/221428428152-0-1/s-l1000.jpg",
+    default: "https://media.istockphoto.com/vectors/illustration-of-a-soccer-field-football-field-or-soccer-field-vector-id915087622?k=6&m=915087622&s=612x612&w=0&h=VdDyomokyLEC2YTEVbgtb5GmOKzt1wQPUvqex1lE3Ys=",
   },
   defaultIconURL: {
     section: "Image",
