@@ -200,11 +200,11 @@ const vis = {
                 if (i+1 == data.length) { done(); }
               }
               image.metadata = row;
-              image.src = row.'player_track_events_extended.icon'.value;
+              image.src = row.`player_track_events_extended.icon`.value;
               break;
 
             case "html":
-              var coordinates = L.latLng(row.'player_track_events_extended.y'.value, row.'player_track_events_extended'.x.value);
+              var coordinates = L.latLng(row.`player_track_events_extended.y`.value, row.`player_track_events_extended`.x.value);
               var htmlIcon = L.divIcon({ 
                 className: 'myicon',
                 iconSize: null,  // required due to Leaflet bug (css will be overwritten without this)
@@ -224,16 +224,16 @@ const vis = {
 
       const addMarker = function(metadata, height, width) {
         var markerIcon = new LeafIcon({
-            iconUrl: metadata.'player_track_events_extended.icon'.value || default_icon,
+            iconUrl: metadata.`player_track_events_extended.icon`.value || default_icon,
             iconSize: [width, height],
         })
 
         var markerOptions = {
-          title: metadata.'player_track_events_extended.hovertext'.value || "A Marker",
+          title: metadata.`player_track_events_extended.hovertext`.value || "A Marker",
           draggable: false,
           icon: markerIcon,
         }
-        var coordinates = L.latLng(metadata.'player_track_events_extended.y'.value, metadata.'player_track_events_extended.x'.value);
+        var coordinates = L.latLng(metadata.`player_track_events_extended.y`.value, metadata.`player_track_events_extended.x`.value);
 
         if (config.debugOutput) {
           console.log("L.marker(): coordinates, markerOptions");
