@@ -179,7 +179,7 @@ const vis = {
         const max_icon_size = 50;
         for (i = 0; i < data.length; i++) {
           row = data[i];
-          mark_type = row.mark_type.value || "marker";
+          mark_type = row.'player_track_events_extended.mark_type'.value || "marker";
 
           switch(mark_type) {
             case "marker":
